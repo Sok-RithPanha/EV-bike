@@ -128,9 +128,9 @@
 <!-- ============ TRUST STRIP ============ -->
 <section class="py-8 border-b border-brand-100 bg-white">
   <div class="max-w-7xl mx-auto px-5 lg:px-8 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm font-medium text-brand-700 reveal">
-    <span class="flex items-center gap-2">🔋 Free 2-year battery warranty</span>
-    <span class="flex items-center gap-2">🚚 Free white-glove delivery</span>
-    <span class="flex items-center gap-2">↩️ 30-day ride trial</span>
+    <span class="flex items-center gap-2">🔋 Free 2-years Battery warranty</span>
+
+    
     <span class="flex items-center gap-2">🛠️ Nationwide service network</span>
   </div>
 </section>
@@ -212,10 +212,10 @@
     <div class="order-1 lg:order-2 reveal">
       <span class="text-sky-500 font-semibold text-sm uppercase tracking-widest">About VR EV</span>
       <h2 class="display text-3xl sm:text-4xl font-bold mt-3">Built by riders who wanted better.</h2>
-      <p class="text-brand-700/70 mt-4">VR EV started with a simple question: why should an electric bike look and feel like an afterthought? Every frame is tuned in-house, every battery pack tested past its spec, and every ride finished with the kind of fit and finish you'd expect from a showroom floor — because that's exactly where it belongs.</p>
+      <p class="text-brand-700/70 mt-4">VR EV started with a simple question: why should an electric bike look and feel like an afterthought? Every frame is tuned in-house, every charging_time pack tested past its spec, and every ride finished with the kind of fit and finish you'd expect from a showroom floor — because that's exactly where it belongs.</p>
       <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
-        <div class="bg-white rounded-xl p-4 shadow-card"><div class="font-bold display text-lg">2019</div><div class="text-brand-700/60">Founded</div></div>
-        <div class="bg-white rounded-xl p-4 shadow-card"><div class="font-bold display text-lg">12</div><div class="text-brand-700/60">Countries shipped</div></div>
+        <div class="bg-white rounded-xl p-4 shadow-card"><div class="font-bold display text-lg">2026</div><div class="text-brand-700/60">Founded</div></div>
+        <div class="bg-white rounded-xl p-4 shadow-card"><div class="font-bold display text-lg">2</div><div class="text-brand-700/60">Countries shipped</div></div>
       </div>
     </div>
   </div>
@@ -278,7 +278,7 @@
       <h5 class="font-semibold text-white mb-4">FAQs</h5>
       <ul class="space-y-2.5 text-sm text-brand-300">
         <li><a href="#faq" class="hover:text-mint-300 transition-colors">Shipping & delivery</a></li>
-        <li><a href="#faq" class="hover:text-mint-300 transition-colors">Battery & charging</a></li>
+        <li><a href="#faq" class="hover:text-mint-300 transition-colors">Charging time & charging</a></li>
         <li><a href="#faq" class="hover:text-mint-300 transition-colors">Financing options</a></li>
         <li><a href="#faq" class="hover:text-mint-300 transition-colors">Sizing guide</a></li>
       </ul>
@@ -439,33 +439,33 @@
 <script>
 /* ================= DATA ================= */
 const PRODUCTS = [
-  { id:'p1', name:'机甲3/JJ3', category:'Performance', price:472.59, rating:4.8, popularity:98, dateAdded:9, stock:true,
+  { id:'p1', name:'机甲3/JJ3', category:'Performance', price:750, rating:4.8, popularity:98, dateAdded:9, stock:true,
     img:'./JJ3.png',
-    badge:'Bestseller', range:60, topSpeed:55, battery:'60V/72V/20-32Ah', weight:'54 lbs',
+    badge:'Bestseller', range:'60-110', topSpeed:60, charging_time:'60V/72V-20/32Ah', weight:'54 lbs',
     desc:'High-output performance scooter with a bold urban body and strong commuting power.' },
-  { id:'p2', name:'蓝鲸/LJ', category:'Urban', price:388.41, rating:4.6, popularity:91, dateAdded:2, stock:true,
+  { id:'p2', name:'蓝鲸/LJ', category:'Urban', price:700, rating:4.6, popularity:91, dateAdded:2, stock:true,
     img:'./LJ.png',
-    badge:'New', range:75, topSpeed:50, battery:'60V/72V/20-32Ah', weight:'49 lbs',
+    badge:'New', range:'60-110', topSpeed:50, charging_time:'6-8h', weight:'49 lbs',
     desc:'A stylish city scooter built for smooth commuting and everyday road confidence.' },
-  { id:'p3', name:'E8Q1', category:'Commuter', price:363.3, rating:4.7, popularity:84, dateAdded:20, stock:true,
+  { id:'p3', name:'E8Q1', category:'Commuter', price:650, rating:4.7, popularity:84, dateAdded:20, stock:true,
     img:'./E8Q1.png',
-    badge:'', range:65, topSpeed:40, battery:'48V/60V/30Ah', weight:'58 lbs',
+    badge:'', range:'65-120', topSpeed:40, charging_time:'6-8h', weight:'58 lbs',
     desc:'Lightweight commuter model with easy handling, comfortable seating, and reliable daily range.' },
-  { id:'p4', name:'E4', category:'Commuter', price:552.34, rating:4.5, popularity:76, dateAdded:35, stock:true,
+  { id:'p4', name:'E4', category:'Commuter', price:950, rating:4.5, popularity:76, dateAdded:35, stock:true,
     img:'./E4.png',
-    badge:'', range:80, topSpeed:65, battery:'60V/20Ah', weight:'38 lbs',
+    badge:'', range:'80-90', topSpeed:65, charging_time:'6-8h', weight:'38 lbs',
     desc:'A premium all-rounder built for agile movement and longer-range road trips.' },
-  { id:'p5', name:'鲲鹏/KUNPENG', category:'High Power', price:586.0, rating:4.6, popularity:70, dateAdded:60, stock:true,
+  { id:'p5', name:'鲲鹏/KUNPENG', category:'High Power', price:1200, rating:4.6, popularity:70, dateAdded:60, stock:true,
     img:'./Landing.png',
-    badge:'Top Pick', range:90, topSpeed:70, battery:'72V/32Ah', weight:'56 lbs',
+    badge:'Top Pick', range:'90-110', topSpeed:70, charging_time:'6-8h', weight:'56 lbs',
     desc:'Power-packed scooter with aggressive styling and strong touring capability.' },
   
   
   
 
-  { id:'p10', name:'KUNPENG', category:'Cruiser', price:2899, rating:4.6, popularity:70, dateAdded:60, stock:false,
+  { id:'p10', name:'KUNPENG', category:'Cruiser', price:1200, rating:4.6, popularity:70, dateAdded:60, stock:false,
     img:'./Landing.png',
-    badge:'', range:80, topSpeed:25, battery:'900Wh', weight:'56 lbs',
+    badge:'', range:'90-110', topSpeed:70, charging_time:'6-8h', weight:'56 lbs',
     desc:'Long-haul comfort with a relaxed riding position, built for weekend tours and long sunset rides.' },
   
 
@@ -474,9 +474,9 @@ const PRODUCTS = [
 
 const FAQS = [
   { q:'How far can I ride on a single charge?', a:'Depending on the model, VR EV bikes deliver 40–80 miles per charge under normal pedal-assist conditions. Terrain, rider weight, and assist level all affect real-world range.' },
-  { q:'How long does the battery take to charge?', a:'A full charge takes 3–5 hours from empty using the included fast charger. Most riders top up overnight.' },
+  { q:'How long does the charging_time take to charge?', a:'A full charge takes 3–5 hours from empty using the included fast charger. Most riders top up overnight.' },
   { q:'Do you offer financing?', a:'Yes — we partner with several providers to offer 0% APR financing on approved credit, available at checkout.' },
-  { q:'What\'s covered under warranty?', a:'Every VR EV ships with a 2-year battery and drivetrain warranty and a lifetime frame warranty against manufacturing defects.' },
+  { q:'What\'s covered under warranty?', a:'Every VR EV ships with a 2-year Battery and drivetrain warranty and a lifetime frame warranty against manufacturing defects.' },
   { q:'Can I return my bike if it\'s not right for me?', a:'Absolutely. We offer a 30-day ride trial — if it\'s not the right fit, we\'ll arrange a free return pickup.' },
 ];
 
@@ -640,7 +640,7 @@ function openCompareModal(){
     ['Category', p => p.category],
     ['Range', p => p.range + ' mi'],
     ['Top speed', p => p.topSpeed + ' mph'],
-    ['Battery', p => p.battery],
+    ['Charging time', p => p.charging_time],
     ['Weight', p => p.weight],
     ['Rating', p => '⭐ ' + p.rating.toFixed(1)],
   ];
@@ -694,9 +694,9 @@ function openQuickView(id){
       <h3 class="display text-2xl font-bold mt-1">${p.name}</h3>
       <p class="text-brand-700/70 text-sm mt-3">${p.desc}</p>
       <div class="grid grid-cols-3 gap-3 mt-5 text-center">
-        <div class="bg-brand-50 rounded-xl py-3"><div class="font-bold display">${p.range} mi</div><div class="text-[11px] text-brand-700/60">Range</div></div>
-        <div class="bg-brand-50 rounded-xl py-3"><div class="font-bold display">${p.topSpeed} mph</div><div class="text-[11px] text-brand-700/60">Top speed</div></div>
-        <div class="bg-brand-50 rounded-xl py-3"><div class="font-bold display">${p.battery}</div><div class="text-[11px] text-brand-700/60">Battery</div></div>
+        <div class="bg-brand-50 rounded-xl py-3"><div class="font-bold display">${p.range} km</div><div class="text-[11px] text-brand-700/60">Range</div></div>
+        <div class="bg-brand-50 rounded-xl py-3"><div class="font-bold display">${p.topSpeed} km/h</div><div class="text-[11px] text-brand-700/60">Top speed</div></div>
+        <div class="bg-brand-50 rounded-xl py-3"><div class="font-bold display">${p.charging_time}</div><div class="text-[11px] text-brand-700/60">Charging time</div></div>
       </div>
       <div class="flex items-center justify-between mt-6">
         <span class="display text-2xl font-bold">${money(p.price)}</span>
