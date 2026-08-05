@@ -65,7 +65,7 @@
       </nav>
 
       <div class="flex items-center gap-2 sm:gap-3">
-        <label class="hidden md:flex items-center gap-2 rounded-full bg-brand-50 px-3 py-2 border border-brand-100">
+        <label class="hidden md:flex order-first items-center gap-2 rounded-full bg-brand-50 px-3 py-2 border border-brand-100 mr-2">
           <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-brand-700">Lang</span>
           <select id="languageSelect" class="bg-transparent text-sm font-medium text-brand-800 outline-none" aria-label="Select language">
             <option value="en">EN</option>
@@ -98,7 +98,7 @@
 
   <!-- Mobile menu -->
   <div id="mobileMenu" class="hidden lg:hidden border-t border-brand-100 bg-white px-5 py-4 space-y-3">
-    <div class="flex items-center justify-between rounded-full bg-brand-50 px-3 py-2 border border-brand-100">
+    <div class="flex items-center justify-between order-first rounded-full bg-brand-50 px-3 py-2 border border-brand-100">
       <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-brand-700">Lang</span>
       <select id="mobileLanguageSelect" class="bg-transparent text-sm font-medium text-brand-800 outline-none" aria-label="Select language">
         <option value="en">EN</option>
@@ -120,7 +120,7 @@
   <div class="max-w-7xl mx-auto px-5 lg:px-8 relative grid lg:grid-cols-2 gap-10 items-center py-20 lg:py-28">
     <div class="text-white reveal">
       <span class="inline-flex items-center gap-2 bg-white/10 border border-white/25 text-mint-300 text-xs font-semibold px-3 py-1.5 rounded-full tracking-wide uppercase" data-i18n="badgeElectric">Electric Mobility, Elevated</span>
-      <h1 class="display text-4xl sm:text-5xl lg:text-6xl font-bold mt-5 leading-[1.08]" data-i18n="heroTitle">Rising fuel prices?<br>Ride electric instead.</h1>
+      <h1 class="display text-4xl sm:text-5xl lg:text-6xl font-bold mt-5 leading-[1.08]" data-i18n="heroTitle">Rising fuel prices? Ride electric instead.</h1>
       <p class="mt-5 text-lg text-brand-100 max-w-md" data-i18n="heroText">Precision-engineered electric bikes built for range, speed, and everyday luxury. Explore the VR EV lineup and find your current.</p>
       <div class="mt-8 flex flex-wrap gap-4">
         <a href="#shop" class="ripple-btn bg-white text-brand-700 font-semibold px-7 py-3.5 rounded-full hover:shadow-2xl hover:-translate-y-0.5 transition-all" data-i18n="shopLineup">Shop the lineup</a>
@@ -458,7 +458,7 @@ const translations = {
     navSupport: 'Support',
     searchPlaceholder: 'Search bikes...',
     badgeElectric: 'Electric Mobility, Elevated',
-    heroTitle: 'Rising fuel prices?<br>Ride electric instead.',
+    heroTitle: 'Rising fuel prices? Ride electric instead.',
     heroText: 'Precision-engineered electric bikes built for range, speed, and everyday luxury. Explore the VR EV lineup and find your current.',
     shopLineup: 'Shop the lineup',
     ourStory: 'Our story',
@@ -532,85 +532,144 @@ const translations = {
     noResultsShort: 'No results',
   },
   km: {
-    navHome: 'ទំព័រ​ដើម',
-    navShop: 'ម៉ូតូ',
-    navCompare: 'ប្រៀបធៀប',
-    navAbout: 'អំពីយើង',
-    navSupport: 'ជំនួយ',
-    searchPlaceholder: 'ស្វែងរកម៉ូតូ...',
-    badgeElectric: 'ចល័តកំរិតកំពូល',
-    heroTitle: 'តម្លៃប្រេងឡើង?<br>កាន់ម៉ូតូអគ្គិសនី។',
-    heroText: 'ម៉ូតូអគ្គិសនីដែលរចនាឡើងជាមួយនឹងជួសជុល និងសមត្ថភាពបញ្ជូនទាន់ចុង។ ស្វែងរកម៉ូតូ VR EV និងរកឈុតរបស់អ្នក។',
-    shopLineup: 'ទិញម៉ូតូ',
-    ourStory: 'រឿងរបស់យើង',
-    statRange: 'ចម្ងាយ',
-    statRiders: 'អ្នកបើកបរ',
-    statRating: 'ការវាយតម្លៃ',
-    trustWarranty: '🔋 ប្រ្រាក់ធានា 2 ឆ្នាំ',
-    trustService: '🛠️ បណ្តាញសេវាកម្ម nationwide',
-    lineupLabel: 'ម៉ូតូរបស់យើង',
-    lineupTitle: 'ម៉ូតូទាំងអស់ ត្រូវបានរចនាឡើងដើម្បីធ្វើឱ្យធ្វើដំណើរ​បានស្រាល',
-    lineupText: 'ត្រង់ទៀត ប្រៀបធៀប និងរកម៉ូតូដែលសមស្របជាមួយការធ្វើដំណើរ',
-    filterCategory: 'ប្រភេទ',
-    filterPrice: 'តម្លៃអតិបរិមា',
-    filterAvailability: 'ការស្រាប់កែ',
-    inStockOnly: 'មានស្តុកតែ',
-    resetFilters: 'កំណត់ឡើងវិញ',
-    bikesFound: 'ម៉ូតូត្រូវបានរកឃើញ',
-    sortBy: 'តម្រៀបតាម',
-    optionNewest: 'ថ្មីបំផុត',
-    optionPopular: 'ពេញនិយម',
-    optionPriceLow: 'តម្លៃ: ទាបទៅខ្ពស់',
-    optionPriceHigh: 'តម្លៃ: ខ្ពស់ទៅទាប',
-    noResults: 'មិនមានម៉ូតូដែលត្រូវការទេ — ព្យាយាមពង្រីកការស្វែងរក។',
-    compareLabel: 'ប្រៀបធៀប',
-    compareTitle: 'មិនប្រាកដថាម៉ូតូណា? ប្រៀបធៀបភ្លាមៗ។',
-    compareText: 'ជ្រើសរើសម៉ូតូ 3 គ្រឿងនៅក្នុងហាង និងបើករបារប្រៀបធៀបដើម្បីមើលចម្ងាយ ល្បឿនកំពូល និងតម្លៃ។',
-    startComparing: 'ចាប់ផ្តើមប្រៀបធៀប',
-    aboutLabel: 'អំពី VR EV',
-    aboutTitle: 'បង្កើតឡើងដោយអ្នកបើកបរដែលចង់បានល្អជាង',
-    aboutText: 'VR EV ចាប់ផ្តើមពីសំណួរ: ហេតុអ្វីម៉ូតូអគ្គិសនីត្រូវធ្វើជាអ្វីដែលមិនស្រួល? រ each frame ត្រូវបានកែច្នៃនៅក្នុងផ្ទះ និងថ្ម ត្រូវបានធ្វើតេស្តជាមុនសិន។',
-    founded: 'បានបង្កើត',
-    countries: 'ប្រទេសដែលដឹកជញ្ជូន',
-    newsletterTitle: 'ទទួលបានការលេចធ្លាយដំបូង',
-    newsletterText: 'ចូលរួមដើម្បីទទួលបានការចេញផ្សាយទាន់ពេលវេលា និងតម្លៃពិសេស។',
-    emailPlaceholder: 'you@email.com',
-    subscribeBtn: 'ជាវ',
-    subscribeSuccess: '✓ អ្នកបានចុះឈ្មោះរួចរាល់ — ស្វាគមន៍មក VR EV។',
-    supportLabel: 'ជំនួយ',
-    faqTitle: 'សំណួរសួរញឹកញាប់',
-    quickLinks: 'តំណភ្ជាប់រហ័ស',
-    footerHome: 'ទំព័រ​ដើម',
-    footerShop: 'ទិញម៉ូតូ',
-    footerAbout: 'អំពីយើង',
-    footerCompare: 'ប្រៀបធៀបម៉ូតូ',
-    customerSupport: 'ជំនួយអតិថិជន',
-    trackOrder: 'តាមដានការក្នុងចំណង់',
-    warrantyReturns: 'ការធានា & ការត្រឡប់',
-    serviceCenters: 'មជ្ឈមណ្ឌលសេវាកម្ម',
-    contactUs: 'ទាក់ទងមកយើង',
-    faqsTitle: 'សំណួរ',
-    shippingDelivery: 'ការដឹកជញ្ជូន',
-    chargingInfo: 'ពេលវេលាហ្វឹកហាត់',
-    financing: 'ជម្រើសហិរញ្ញវត្ថុ',
-    sizingGuide: 'ការណែនាំទំហំ',
-    footerBrand: 'VR EV Electric Mobility',
-    rightsReserved: 'រក្សាសិទ្ធិគ្រប់យ៉ាង។',
-    acceptCards: 'យើងទទួលយក:',
-    cartTitle: 'រទេះទិញ',
-    cartEmpty: 'រទេះទិញរបស់អ្នកទទេ។',
-    couponPlaceholder: 'កូដ쿠ប៉ុង (សាក VREV10)',
-    applyCoupon: 'អនុវត្ត',
-    subtotal: 'សរុប',
-    discountLabel: 'បញ្ចុះតម្លៃ',
-    totalLabel: 'សរុបចុងក្រោយ',
-    checkoutBtn: 'បង់ប្រាក់',
-    wishlistTitle: 'បញ្ជីចង់ទិញ',
-    wishlistEmpty: 'មិនមានអ្វីទេ។ ចុចលើប៊ូតុង heart នៅលើម៉ូតូ។',
-    compareCount: '{count} បានជ្រើសរើស',
-    compareBarClear: 'លុប',
-    compareBarCompare: 'ប្រៀបធៀប',
-    noResultsShort: 'គ្មានលទ្ធផល',
+  navHome: 'ទំព័រដើម',
+  navShop: 'កង់អគ្គិសនី',
+  navCompare: 'ប្រៀបធៀប',
+  navAbout: 'អំពីយើង',
+  navSupport: 'ជំនួយ',
+
+  searchPlaceholder: 'ស្វែងរកកង់អគ្គិសនី...',
+
+  badgeElectric: 'ការធ្វើដំណើរដោយអគ្គិសនី កាន់តែប្រណិត',
+
+  heroTitle: 'តម្លៃប្រេងកំពុងកើនឡើង?<br> ប្ដូរមកជិះកង់អគ្គិសនីវិញ។',
+
+  heroText: 'កង់អគ្គិសនីដែលរចនាឡើងយ៉ាងល្អឥតខ្ចោះ សម្រាប់ចម្ងាយឆ្ងាយ ល្បឿនខ្ពស់ និងភាពប្រណិតក្នុងការប្រើប្រាស់ប្រចាំថ្ងៃ។ ស្វែងរកម៉ូឌែល VR EV ដែលសាកសមនឹងអ្នក។',
+
+  shopLineup: 'ទិញកង់',
+  ourStory: 'រឿងរ៉ាវរបស់យើង',
+
+  statRange: 'ចម្ងាយបើកបរ',
+  statRiders: 'អ្នកប្រើប្រាស់ទូទាំងពិភពលោក',
+  statRating: 'ការវាយតម្លៃជាមធ្យម',
+
+  trustWarranty: '🔋 ធានាថ្មរយៈពេល ២ ឆ្នាំ',
+  trustService: '🛠️ បណ្ដាញមជ្ឈមណ្ឌលសេវាកម្មទូទាំងប្រទេស',
+
+  lineupLabel: 'ម៉ូឌែលរបស់យើង',
+
+  lineupTitle: 'គ្រប់ម៉ូឌែល ត្រូវបានរចនាឡើងសម្រាប់ការបើកបរយ៉ាងរលូន',
+
+  lineupText: 'ត្រង ស្វែងរក និងប្រៀបធៀប ដើម្បីរកកង់ដែលសាកសមនឹងអ្នក។',
+
+  filterCategory: 'ប្រភេទ',
+  filterPrice: 'តម្លៃអតិបរមា',
+  filterAvailability: 'ស្ថានភាពស្តុក',
+  inStockOnly: 'មានស្តុកប៉ុណ្ណោះ',
+  resetFilters: 'កំណត់ឡើងវិញ',
+
+  bikesFound: 'កង់ត្រូវបានរកឃើញ',
+
+  sortBy: 'តម្រៀបតាម',
+  optionNewest: 'ថ្មីបំផុត',
+  optionPopular: 'ពេញនិយមបំផុត',
+  optionPriceLow: 'តម្លៃ៖ ពីទាបទៅខ្ពស់',
+  optionPriceHigh: 'តម្លៃ៖ ពីខ្ពស់ទៅទាប',
+
+  noResults: 'មិនមានកង់ដែលត្រូវនឹងលក្ខខណ្ឌស្វែងរកទេ។ សូមសាកល្បងកែប្រែលក្ខខណ្ឌស្វែងរក។',
+
+  compareLabel: 'ប្រៀបធៀប',
+
+  compareTitle: 'មិនប្រាកដថាគួរជ្រើសម៉ូឌែលណា? ប្រៀបធៀបបានភ្លាមៗ។',
+
+  compareText: 'ជ្រើសរើសកង់បានរហូតដល់ ៣ គ្រឿង ហើយបើកផ្ទាំងប្រៀបធៀប ដើម្បីមើលចម្ងាយបើកបរ ល្បឿនអតិបរមា និងតម្លៃ នៅកន្លែងតែមួយ។',
+
+  startComparing: 'ចាប់ផ្តើមប្រៀបធៀប',
+
+  aboutLabel: 'អំពី VR EV',
+
+  aboutTitle: 'បង្កើតឡើងដោយអ្នកជិះកង់ ដែលចង់បានអ្វីដែលល្អជាង។',
+
+  aboutText: 'VR EV ចាប់ផ្ដើមពីសំណួរមួយថា៖ ហេតុអ្វីបានជាកង់អគ្គិសនីមិនអាចមានទាំងរូបរាងស្រស់ស្អាត និងអារម្មណ៍ប្រណិតក្នុងការប្រើប្រាស់? ស៊ុមកង់គ្រប់គ្រឿងត្រូវបានរចនា និងកែសម្រួលដោយក្រុមការងាររបស់យើង ខណៈថ្មនីមួយៗត្រូវបានធ្វើតេស្តយ៉ាងម៉ត់ចត់ ដើម្បីធានាគុណភាពខ្ពស់បំផុត។',
+
+  founded: 'បង្កើតឡើងនៅឆ្នាំ',
+  countries: 'ប្រទេសដែលបានដឹកជញ្ជូន',
+
+  newsletterTitle: 'ទទួលព័ត៌មានថ្មីៗមុនគេ',
+
+  newsletterText: 'ចុះឈ្មោះដើម្បីទទួលបានព័ត៌មានអំពីម៉ូឌែលថ្មី គន្លឹះក្នុងការប្រើប្រាស់ និងការផ្ដល់ជូនពិសេសសម្រាប់សមាជិក។',
+
+  emailPlaceholder: 'you@email.com',
+
+  subscribeBtn: 'ចុះឈ្មោះ',
+
+  subscribeSuccess: '✓ អ្នកបានចុះឈ្មោះដោយជោគជ័យ។ សូមស្វាគមន៍មកកាន់ VR EV!',
+
+  supportLabel: 'ជំនួយ',
+
+  faqTitle: 'សំណួរដែលសួរញឹកញាប់',
+
+  quickLinks: 'តំណភ្ជាប់រហ័ស',
+
+  footerHome: 'ទំព័រដើម',
+  footerShop: 'ទិញកង់',
+  footerAbout: 'អំពីយើង',
+  footerCompare: 'ប្រៀបធៀបម៉ូឌែល',
+
+  customerSupport: 'សេវាកម្មអតិថិជន',
+
+  trackOrder: 'តាមដានការបញ្ជាទិញ',
+
+  warrantyReturns: 'ការធានា និងការត្រឡប់ទំនិញ',
+
+  serviceCenters: 'មជ្ឈមណ្ឌលសេវាកម្ម',
+
+  contactUs: 'ទាក់ទងមកយើង',
+
+  faqsTitle: 'សំណួរញឹកញាប់',
+
+  shippingDelivery: 'ការដឹកជញ្ជូន',
+
+  chargingInfo: 'ការសាកថ្ម និងរយៈពេលសាក',
+
+  financing: 'ជម្រើសបង់រំលស់',
+
+  sizingGuide: 'ការណែនាំអំពីទំហំ',
+
+  footerBrand: 'VR EV Electric Mobility',
+
+  rightsReserved: 'រក្សាសិទ្ធិគ្រប់យ៉ាង។',
+
+  acceptCards: 'យើងទទួលយក៖',
+
+  cartTitle: 'រទេះទំនិញ',
+
+  cartEmpty: 'រទេះទំនិញរបស់អ្នកនៅទទេ។ សូមជ្រើសរើសកង់ដែលអ្នកពេញចិត្ត។',
+
+  couponPlaceholder: 'លេខកូដបញ្ចុះតម្លៃ (ឧ. VREV10)',
+
+  applyCoupon: 'អនុវត្ត',
+
+  subtotal: 'សរុបរង',
+
+  discountLabel: 'បញ្ចុះតម្លៃ',
+
+  totalLabel: 'សរុប',
+
+  checkoutBtn: 'បង់ប្រាក់',
+
+  wishlistTitle: 'បញ្ជីចង់បាន',
+
+  wishlistEmpty: 'មិនទាន់មានកង់ដែលបានរក្សាទុកទេ។ ចុចរូបបេះដូងលើកង់ណាមួយដើម្បីបន្ថែម។',
+
+  compareCount: 'បានជ្រើសរើស {count} គ្រឿង',
+
+  compareBarClear: 'សម្អាត',
+
+  compareBarCompare: 'ប្រៀបធៀប',
+
+  noResultsShort: 'គ្មានលទ្ធផល'
+
   }
 };
 
