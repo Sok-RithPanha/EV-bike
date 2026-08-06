@@ -12,7 +12,7 @@ const translations = {
     shopLineup: 'Shop the lineup',
     ourStory: 'Our story',
     statRange: 'Miles range',
-    statRiders: 'Riders worldwide',
+    statRiders: 'Current number of employees in CN',
     statRating: 'Average rating',
     trustWarranty: '🔋 Free 2-years Battery warranty',
     trustService: '🛠️ Nationwide service network',
@@ -99,7 +99,7 @@ const translations = {
     ourStory: 'រឿងរ៉ាវរបស់យើង',
 
     statRange: 'ចម្ងាយបើកបរ',
-    statRiders: 'អ្នកប្រើប្រាស់ទូទាំងពិភពលោក',
+    statRiders: 'ចំនួនបុគ្គលិកបច្ចុប្បន្ននៅប្រទេសចិន',
     statRating: 'ការវាយតម្លៃជាមធ្យម',
 
     trustWarranty: '🔋 ធានាថ្មរយៈពេល ២ ឆ្នាំ',
@@ -318,11 +318,11 @@ async function loadProducts() {
 }
 
 const FAQS = [
-  { q:'How far can I ride on a single charge?', a:'Depending on the model, VR EV bikes deliver 40–80 miles per charge under normal pedal-assist conditions. Terrain, rider weight, and assist level all affect real-world range.' },
-  { q:'How long does the charging_time take to charge?', a:'A full charge takes 3–5 hours from empty using the included fast charger. Most riders top up overnight.' },
-  { q:'Do you offer financing?', a:'Yes — we partner with several providers to offer 0% APR financing on approved credit, available at checkout.' },
+  { q:'How far can I ride on a single charge?', a:'Depending on the model, VR EV bikes deliver 80–120 km per charge under normal pedal-assist conditions. Terrain, rider weight, and assist level all affect real-world range.' },
+  { q:'How long does the charging_time take to charge?', a:'A full charge takes 6–8 hours from empty using the included fast charger. Most riders top up overnight.' },
+  
   { q:'What\'s covered under warranty?', a:'Every VR EV ships with a 2-year Battery and drivetrain warranty and a lifetime frame warranty against manufacturing defects.' },
-  { q:'Can I return my bike if it\'s not right for me?', a:'Absolutely. We offer a 30-day ride trial — if it\'s not the right fit, we\'ll arrange a free return pickup.' },
+  
 ];
 
 /* ================= STATE ================= */
