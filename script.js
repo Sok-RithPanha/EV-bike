@@ -454,7 +454,7 @@ function showSkeletons(){
 
 async function fetchProducts() {
   try {
-    const response = await fetch('http://127.0.0.1:5000/api/products');
+    const response = await fetch('https://ev-bike.onrender.com/api/products');
     PRODUCTS = await response.json();
 
     // Hide skeleton loaders and show actual products
@@ -756,7 +756,7 @@ async function placeOrder(e){
 
   try {
     // 3. Send the packaged data to your Python server
-    const response = await fetch('http://127.0.0.1:5000/api/orders', {
+    const response = await fetch('https://ev-bike.onrender.com//api/orders', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -798,7 +798,7 @@ async function handleSubscribe(e){
   const email = emailInput.value.trim();
   
   try {
-    const response = await fetch('http://127.0.0.1:5000/api/subscribe', {
+    const response = await fetch('https://ev-bike.onrender.com//api/subscribe', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
